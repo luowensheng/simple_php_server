@@ -34,7 +34,5 @@ $app->get("/json", function (&$writer, $request){
 
 
 $app->start();
-echo Loader\load_file("./public/index.html");
-
 
 ?>
