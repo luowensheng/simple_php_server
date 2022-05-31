@@ -1,4 +1,4 @@
-```
+```php
 
 <?php
 require "server/server.php";
