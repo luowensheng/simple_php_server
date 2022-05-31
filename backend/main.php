@@ -22,7 +22,7 @@ $app->get("/", function (&$writer, $request){
 
 
 $app->get("/file", function (&$writer, $request){
-    $content = Loader\load_file("D:/oliver/Documents/coding/PHP/netstuff/backend/public/index.html");
+    $content = Loader\load_file("./public/index.html");
     $writer->set_content($content);
 });
 
@@ -34,8 +34,7 @@ $app->get("/json", function (&$writer, $request){
 
 
 $app->start();
-// echo __DIR__;
-echo Loader\load_file("D:/oliver/Documents/coding/PHP/netstuff/backend/public/index.html");
+echo Loader\load_file("./public/index.html");
 
 
 ?>
